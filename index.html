@@ -2,24 +2,88 @@
 <html lang="en"data-theme='light'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishrak's-Fruit-Brust</title>
-
-    <link rel="shortcut icon" href="images/web-logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <title>Ishrak's Fruit Shop</title>
 
 
-<style>
-    .font-lato {
-        font-family: 'Lato', sans-serif;
-    }
-</style>
+  <link rel="shortcut icon" href="images/favico.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
+
+ 
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" author="Ishrak">
+
+
+  <!-- tailwind css daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+              fontFamily: {
+                   'Lato': ['Lato', 'sans-serif']
+            },
+
+          colors: {
+             'primareys': '#F85559',
+             'head': '#414040',
+             'grey': '#414040',
+           },
+     
+          }
+        },
+        screens: {
+         'xl': '1140px',
+
+       },
+      }
+    </script> 
+
+  <style>
+
+      a:active{
+        background-color: rgba(255, 255, 255, 0) !important; 
+      }  
+      .box_container {
+          max-width: 1440px;
+          padding: 0px 60px;
+          width: 100%;
+          box-sizing: border-box;
+
+      }
+
+      @media screen and (max-width:599px) {
+          .box_container {
+              padding: 0px 15px;
+          }
+      }
+
+      @media screen and (min-width:600px) and (max-width:992px) {
+          .box_container {
+              padding: 0px 30px;
+          }
+      }
+
+      footer a{
+          transition: .3s;
+
+        }
+        footer a:hover{
+          color:#F85559 ;
+          
+        }
+
+  </style>
+
 </head>
 
 <body class="font-lato">
@@ -68,6 +132,288 @@
           </div>
          </nav>       
     </header>
+
+    <section class="sm:max-w-xl md:max-w-full lg:max-w-screen-xl m-auto mt-14">
+        <div class="carousel w-full rounded-lg">
+          <div id="slide1" class="carousel-item relative w-full ">
+            <div class="hero rounded-lg" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-60 "></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="btn btn-primary border-none bg-[#F85559]">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+<!--  -------------------->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+<!-- --------------------- -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+<!-- -------------------- -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+       </section>
+<!-- varites fruits section start -->
+       <section>
+
+       </section>  
+  </header>
+  <main class="sm:max-w-xl md:max-w-full lg:max-w-screen-xl m-auto mt-14" >
+<!-- Deal of the day section start -->
+      <section>
+          <div class="flex flex-col md:flex-row  text-center md:text-left justify-between">
+              <div>
+                  <h1 class="text-[#121212] font-extrabold text-5xl pb-4">Deal of the day</h1>
+                  <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+              </div>
+              <div class="flex justify-center mt-5">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                  <div class="flex flex-col">
+                    <span class="countdown font-mono text-6xl">
+                      <span style="--value:15;"></span>
+                    </span>
+                    days
+                  </div> 
+                  <div class="flex flex-col">
+                    <span class="countdown font-mono text-6xl">
+                      <span style="--value:10;"></span>
+                    </span>
+                    hours
+                  </div> 
+                  <div class="flex flex-col">
+                    <span class="countdown font-mono text-6xl">
+                      <span style="--value:24;"></span>
+                    </span>
+                    min
+                  </div> 
+                  <div class="flex flex-col">
+                    <span class="countdown font-mono text-6xl">
+                      <span style="--value:35;"></span>
+                    </span>
+                    sec
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14 ">
+              <!-- first Cards -->
+              <div class="card bg-base-100 border-2 border-gray-200">
+                <figure class="px-10 pt-10">
+                  <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <small class="pt-7">Apples</small>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                  </div>
+                  <div class="card-actions">
+                    <a class="text-[#F85559] pt-3" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+              <!--second Cards -->
+              <div class="card bg-base-100 border-2 border-gray-200">
+                <figure class="px-10 pt-10">
+                  <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <small class="pt-7">Orange</small>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                  </div>
+                  <div class="card-actions">
+                    <a class="text-[#F85559] pt-3" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- third Cards -->
+              <div class="card bg-base-100 border-2 border-gray-200">
+                <figure class="px-10 pt-10">
+                  <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <small class="pt-7">Red Dragon </small>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                  </div>
+                  <div class="card-actions">
+                    <a class="text-[#F85559] pt-3" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- forth Cards -->
+              <div class="card bg-base-100 border-2 border-gray-200">
+                <figure class="px-10 pt-10">
+                  <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <small class="pt-7">Banana</small>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                  </div>
+                  <div class="card-actions">
+                    <a class="text-[#F85559] pt-3" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="flex justify-center mt-10">
+            <button class="btn btn-primary border-none bg-[#F85559] text-white">Shop Now</button>
+          </div>
+      </section>
+<!-- Meet the team section start -->
+      <section class="bg-white" >
+<div class="container px-6 py-10 mx-auto mt-14 bg-no-repeat bg-center bg-cover " style="background-image: url(./images/banner1.png);">
+    <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white md:mt-8">Meet the team section</h1>
+    <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+      Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+    </p>
+<!-- first member -->
+    <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+        <div class="flex flex-col items-center ">
+            <img class="object-cover w-32 h-32 rounded-full" src="./images/member1.png" alt="">
+
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Awlad Hossain</h1>
+
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Fruits Expert</p>
+
+            <div class="flex mt-3 -mx-2">
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Reddit">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Facebook">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Github">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+<!-- second member -->
+        <div class="flex flex-col items-center ">
+            <img class="object-cover w-32 h-32 rounded-full" src="./images/member2.png" alt="">
+
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Safia Chowdhury</h1>
+
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Fruits Expert</p>
+
+            <div class="flex mt-3 -mx-2">
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Reddit">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Facebook">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Github">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+<!-- third member -->
+        <div class="flex flex-col items-center "> 
+            <img class="object-cover w-32 h-32 rounded-full" src="./images/member3.png" alt="">
+
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Rokib Hossain</h1>
+
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Rokib Hossain </p>
+
+            <div class="flex mt-3 -mx-2">
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Reddit">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Facebook">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Github">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+<!-- forth member -->
+        <div class="flex flex-col items-center ">
+            <img class="object-cover w-32 h-32 rounded-full" src="./images/member4.png" alt="">
+
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Chaity</h1>
+
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Fruits Expert</p>
+
+            <div class="flex mt-3 -mx-2">
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Reddit">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Facebook">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="Github">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+      </section>
+<!-- Why Choose Us section start -->
+      <section>
+            <div class="mt-32">
+              <h1 class="text-2xl text-center text-gray-800 capitalize lg:text-4xl dark:text-black md:mt-8 font-extrabold">Why Choose Us</h1>
+              <p class="max-w-2xl mx-auto my-6 text-center text-base text-[#12121299]">
+                Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+              </p>
+            </div>
+            
+      </section>
 
     <main>
 
