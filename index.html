@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishrak's Fruit Burst</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
     <!-- tailwind and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
     <!-- Font awesome link -->
     <script src="https://kit.fontawesome.com/23b13db498.js" crossorigin="anonymous"></script>
   </head>
+
   <!-- tailwind custom class -->
   <script>
     tailwind.config = {
@@ -29,16 +33,18 @@
       }
     }
   </script>
-  <!-- css class -->
+
   <style>
     .font-lato {
       font-family: 'Lato', sans-serif;
     }
   </style>
   <body class="font-lato">
+
     <!-- Header section-->
     <header class="mx-5">
       <div class="container mx-auto mx">
+
         <!-- Navbar section-->
         <div class="navbar bg-white lg:bg-primary-pink rounded-full my-10 lg:py-5 justify-between px-0 lg:px-8 flex flex-row-reverse lg:flex-row">
           <div class="lg:hidden">
@@ -94,7 +100,7 @@
           </div>
           <div class="gap-3">
             <img src="images/logo.png" alt="">
-            <h3 class="text-4xl lg:text-white font-bold">Fruit Brust</h3>
+            <h3 class="text-4xl lg:text-white font-bold">Fruit Burst</h3>
           </div>
           <div class="hidden lg:block">
             <button>
@@ -107,8 +113,10 @@
             </div>
           </div>
         </div>
+
         <!-- Banner section-->
         <div class="carousel w-full">
+
           <!-- Slide-1 -->
           <div id="slide1" class="carousel-item relative w-full">
             <div class="hero rounded-md" style="background-image: url(images/banner1.png);">
@@ -126,6 +134,7 @@
               <a href="#slide2" class="btn btn-circle bg-black border-0 text-white">❯</a>
             </div>
           </div>
+
           <!-- Slide-2 -->
           <div id="slide2" class="carousel-item relative w-full">
             <div class="hero rounded-md" style="background-image: url(images/banner2.png);">
@@ -143,6 +152,7 @@
               <a href="#slide3" class="btn btn-circle bg-black border-0 text-white">❯</a>
             </div>
           </div>
+
           <!-- Slide-3 -->
           <div id="slide3" class="carousel-item relative w-full">
             <div class="hero rounded-md" style="background-image: url(images/banner3.png);">
@@ -160,6 +170,7 @@
               <a href="#slide4" class="btn btn-circle bg-black border-0 text-white">❯</a>
             </div>
           </div>
+
           <!-- Slide-4-->
           <div id="slide4" class="carousel-item relative w-full">
             <div class="hero rounded-md" style="background-image: url(images/banner4.png);">
@@ -178,6 +189,7 @@
             </div>
           </div>
         </div>
+
         <!-- Banner section div -->
         <section class="hidden lg:flex lg:justify-center">
           <div class="flex bg-white w-4/5 justify-around rounded-lg relative -mt-36 shadow-xl">
@@ -225,17 +237,21 @@
         </section>
       </div>
     </header>
+
     <!-- Main section-->
     <main class="mx-5">
       <div class="container mx-auto">
+
         <!-- Deal of the day section -->
         <section class="mt-24">
+
           <!-- Deal of the day header section -->
           <div class="flex flex-col lg:flex-row  mx-10 lg:mx-0 mb-10">
             <div class="flex-1 text-center lg:text-start">
               <h2 class="text-4xl lg:text-5xl font-bold my-4">Deal of the day</h2>
               <p class="font-primary-description mb-5 lg:mr-20">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
+
             <!-- Countdown section -->
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max flex-1 justify-center mx-3 md:mx-0 lg:mx-0 lg:justify-end">
               <div class="flex flex-col">
@@ -263,10 +279,13 @@
               </div>
             </div>
           </div>
+
           <!-- Deal of the day card section -->
           <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-center">
+
             <!-- Modal section start-->
-            <!-- Card-1 -->
+
+            <!-- Cart-1 -->
             <input type="checkbox" id="my_modal_6" class="modal-toggle" />
             <div class="modal font-lato">
               <div class="modal-box py-20">
@@ -277,6 +296,7 @@
                   <div class="card-body">
                     <h2 class="card-title text-4xl font-bold justify-center my-3">Apples</h2>
                     <p class="text-center my-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
                     <!-- Rating -->
                     <div class="rating rating-lg rating-half  justify-center">
                       <input type="radio" name="rating-10" class="rating-hidden" />
@@ -299,7 +319,8 @@
                 </div>
               </div>
             </div>
-            <!-- card-2 -->
+
+            <!-- cart-2 -->
             <input type="checkbox" id="my_modal_7" class="modal-toggle" />
             <div class="modal font-lato">
               <div class="modal-box py-20">
@@ -310,6 +331,7 @@
                   <div class="card-body">
                     <h2 class="card-title text-4xl font-bold justify-center my-3">Orange</h2>
                     <p class="text-center my-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
                     <!-- Rating -->
                     <div class="rating rating-lg rating-half  justify-center">
                       <input type="radio" name="rating-10" class="rating-hidden" />
@@ -332,7 +354,8 @@
                 </div>
               </div>
             </div>
-            <!-- card-3 -->
+
+            <!-- cart-3 -->
             <input type="checkbox" id="my_modal_8" class="modal-toggle" />
             <div class="modal font-lato">
               <div class="modal-box py-20">
@@ -343,6 +366,7 @@
                   <div class="card-body">
                     <h2 class="card-title text-4xl font-bold justify-center my-3">Red Dragon</h2>
                     <p class="text-center my-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
                     <!-- Rating -->
                     <div class="rating rating-lg rating-half  justify-center">
                       <input type="radio" name="rating-10" class="rating-hidden" />
@@ -365,7 +389,8 @@
                 </div>
               </div>
             </div>
-            <!-- card-4 -->
+
+            <!-- cart-4 -->
             <input type="checkbox" id="my_modal_9" class="modal-toggle" />
             <div class="modal font-lato">
               <div class="modal-box py-20">
@@ -376,6 +401,7 @@
                   <div class="card-body">
                     <h2 class="card-title text-4xl font-bold justify-center my-3">Banana</h2>
                     <p class="text-center my-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
                     <!-- Rating -->
                     <div class="rating rating-lg rating-half  justify-center">
                       <input type="radio" name="rating-10" class="rating-hidden" />
@@ -398,8 +424,10 @@
                 </div>
               </div>
             </div>
+
             <!-- Modal section end -->
-            <!-- Card 1 -->
+
+            <!-- Cart 1 -->
             <div class="card border-2 pb-7 pt-16">
               <figure>
                 <img src="images/fruit6.png" alt="" />
@@ -408,6 +436,7 @@
                 <h2 class="card-title text-2xl font-bold justify-center my-3">12.90$ - 18.85$</h2>
                 <hr>
                 <p class="text-center my-3">Apples</p>
+
                 <!-- Rating -->
                 <div class="rating rating-lg rating-half  justify-center mb-3">
                   <input type="radio" name="rating-10" class="rating-hidden" />
@@ -428,7 +457,8 @@
                 </div>
               </div>
             </div>
-            <!-- Card 2 -->
+
+            <!-- Cart 2 -->
             <div class="card border-2 pb-7 pt-16">
               <figure>
                 <img src="images/fruit7.png" alt="" />
@@ -452,12 +482,14 @@
                   <input type="radio" name="rating-10" class="bg-primary-pink mask mask-star-2 mask-half-2" />
                 </div>
                 <div class="card-actions justify-center">
+
                   <!-- The button to open modal -->
                   <label for="my_modal_7" class="text-primary-pink font-bold">Details</label>
                 </div>
               </div>
             </div>
-            <!-- Card 3 -->
+
+            <!-- Cart 3 -->
             <div class="card border-2 pb-7 pt-16">
               <figure>
                 <img src="images/fruit8.png" alt="" />
@@ -466,6 +498,7 @@
                 <h2 class="card-title text-2xl font-bold justify-center my-3">12.90$ - 18.85$</h2>
                 <hr>
                 <p class="text-center my-3">Red Dragon</p>
+
                 <!-- Rating -->
                 <div class="rating rating-lg rating-half  justify-center mb-3">
                   <input type="radio" name="rating-10" class="rating-hidden" />
@@ -481,12 +514,14 @@
                   <input type="radio" name="rating-10" class="bg-primary-pink mask mask-star-2 mask-half-2" />
                 </div>
                 <div class="card-actions justify-center">
+
                   <!-- The button to open modal -->
                   <label for="my_modal_8" class="text-primary-pink font-bold">Details</label>
                 </div>
               </div>
             </div>
-            <!-- Card 4 -->
+
+            <!-- Cart 4 -->
             <div class="card border-2 pb-7 pt-16">
               <figure>
                 <img src="images/fruit9.png" alt="" />
@@ -495,6 +530,7 @@
                 <h2 class="card-title text-2xl font-bold justify-center my-3">12.90$ - 18.85$</h2>
                 <hr>
                 <p class="text-center my-3">Banana</p>
+
                 <!-- Rating -->
                 <div class="rating rating-lg rating-half  justify-center mb-3">
                   <input type="radio" name="rating-10" class="rating-hidden" />
@@ -510,6 +546,7 @@
                   <input type="radio" name="rating-10" class="bg-primary-pink mask mask-star-2 mask-half-2" />
                 </div>
                 <div class="card-actions justify-center">
+
                   <!-- The button to open modal -->
                   <label for="my_modal_9" class="text-primary-pink font-bold">Details</label>
                 </div>
@@ -520,19 +557,23 @@
             <button class="btn bg-primary-pink border-2 border-primary-pink font-bold text-white ">Shop All</button>
           </div>
         </section>
+
         <!-- Meet the team section -->
         <section class="mt-24">
           <div class="hero rounded-xl" style="background-image: url(images/team.png);">
             <div class="hero-overlay bg-opacity-50  rounded-xl"></div>
             <div class="hero-content text-center text-neutral-content py-7 md:py-20 lg:py-20">
               <div>
+
                 <!-- Meet the team header section -->
                 <div>
                   <h2 class="text-4xl lg:text-5xl font-bold my-4 text-white">Meet the team section</h2>
                   <p class="font-primary-description mb-5 text-white py-3 md:px-16 lg:px-80">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
                 </div>
+
                 <!-- teams -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-center mx-5 md:mx-0 lg:mx-0 mt-10">
+
                   <!-- member-1 -->
                   <div class="card">
                     <figure>
@@ -548,6 +589,7 @@
                       </div>
                     </div>
                   </div>
+
                   <!-- member-2 -->
                   <div class="card">
                     <figure>
@@ -563,6 +605,7 @@
                       </div>
                     </div>
                   </div>
+
                   <!-- member-3 -->
                   <div class="card">
                     <figure>
@@ -578,6 +621,7 @@
                       </div>
                     </div>
                   </div>
+
                   <!-- member-4 -->
                   <div class="card">
                     <figure>
@@ -598,6 +642,7 @@
             </div>
           </div>
         </section>
+
         <!-- Why Choose Us section -->
         <section class="mt-24">
           <!-- Why Choose Us header section -->
@@ -605,6 +650,7 @@
             <h2 class="text-4xl lg:text-5xl font-bold my-4">Why Choose Us</h2>
             <p class="font-primary-description mb-5 py-3 md:px-20 lg:px-96">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
           </div>
+
           <!-- Dedicated Team section -->
           <div class="flex flex-col lg:flex-row justify-between gap-8 mt-10">
             <div class="block lg:hidden">
@@ -612,6 +658,7 @@
             </div>
             <div class="flex flex-col md:flex-row lg:flex-row md:gap-16 lg:gap-16">
               <div class="flex-1">
+
                 <!-- Part-1 -->
                 <div class="card card-side mb-8 flex flex-col lg:flex-row">
                   <div class="flex justify-center lg:justify-start">
@@ -629,6 +676,7 @@
                     <p class="text-primary-description">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
                 </div>
+
                 <!-- Part-2 -->
                 <div class="card card-side mb-8 flex flex-col lg:flex-row">
                   <div class="flex justify-center lg:justify-start">
@@ -646,6 +694,7 @@
                     <p class="text-primary-description">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
                 </div>
+
                 <!-- Part-3 -->
                 <div class="card card-side mb-8 flex flex-col lg:flex-row">
                   <div class="flex justify-center lg:justify-start">
@@ -668,6 +717,7 @@
                 <img src="images/whychoose1.png" alt="">
               </div>
               <div class="flex-1">
+
                 <!-- Part-4 -->
                 <div class="card card-side mb-8 flex flex-col lg:flex-row">
                   <div class="flex justify-center lg:justify-start">
@@ -685,6 +735,7 @@
                     <p class="text-primary-description">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
                 </div>
+
                 <!-- Part-5 -->
                 <div class="card card-side mb-8 flex flex-col lg:flex-row">
                   <div class="flex justify-center lg:justify-start">
@@ -702,6 +753,7 @@
                     <p class="text-primary-description">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
                 </div>
+
                 <!-- Part-6 -->
                 <div class="card card-side mb-8 flex flex-col lg:flex-row">
                   <div class="flex justify-center lg:justify-start">
@@ -725,68 +777,41 @@
         </section>
       </div>
     </main>
+
     <!-- Footer section-->
     <footer class="bg-black mt-24 py-14 md:py-24 lg:py-28">
       <div class="flex gap-5 justify-center">
         <img src="images/logo.png" alt="">
-        <h2 class="text-4xl text-white font-bold flex items-center">Fruit Brust</h2>
+        <h2 class="text-4xl text-white font-bold flex items-center">Fruit Burst</h2>
       </div>
       <div class="flex justify-center my-16 mx-10">
         <ul class="text-white flex flex-wrap justify-center gap-6 lg:gap-20">
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">About Us</a>
-          </li>
-          <li>
-            <a href="">Shop</a>
-          </li>
-          <li>
-            <a href="">All Fruits</a>
-          </li>
-          <li>
-            <a href="">Support</a>
-          </li>
-          <li>
-            <a href="">My Account</a>
-          </li>
+          <!-- Navbar menu content here -->
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">All Fruits</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">My Account</a></li>
         </ul>
       </div>
+      
       <div class="flex justify-center mt-14">
         <ul class="text-white flex flex-wrap gap-6 lg:gap-16 justify-center">
-          <li>
-            <a href="https://www.google.com/">
-              <i class="fa-brands fa-twitter text-4xl"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com/">
-              <i class="fa-brands fa-facebook text-4xl"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com/">
-              <i class="fa-brands fa-youtube text-4xl"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com/">
-              <i class="fa-brands fa-linkedin text-4xl"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com/">
-              <i class="fa-brands fa-instagram text-4xl"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com/">
-              <i class="fa-brands fa-apple text-4xl"></i>
-            </a>
-          </li>
+            <li><a href="https://www.google.com/"><i class="fa-brands fa-twitter text-4xl"></i></a></li>
+            <li><a href="https://www.google.com/"><i class="fa-brands fa-facebook text-4xl"></i></a></li>
+            <li><a href="https://www.google.com/"><i class="fa-brands fa-youtube text-4xl"></i></a></li>
+            <li><a href="https://www.google.com/"><i class="fa-brands fa-linkedin text-4xl"></i></a></li>
+            <li><a href="https://www.google.com/"><i class="fa-brands fa-instagram text-4xl"></i></a></li>
+            <li><a href="https://www.google.com/"><i class="fa-brands fa-apple text-4xl"></i></a></li>
         </ul>
-      </div>
+    </div>
+    
+      <p class="text-white text-center font-bold mt-8">
+        Designed by <a href="https://github.com/ishrak6" target="_blank">©Nasemul Goni Ishrak</a>
+        <a href="https://github.com/ishrak6"</a>
+      </p>
     </footer>
+
   </body>
 </html>
