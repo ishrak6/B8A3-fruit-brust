@@ -19,7 +19,7 @@
     <script src="https://kit.fontawesome.com/23b13db498.js" crossorigin="anonymous"></script>
   </head>
 
-  <!-- tailwind custom class -->
+
   <script>
     tailwind.config = {
       theme: {
@@ -98,21 +98,41 @@
               </li>
             </ul>
           </div>
+
           <div class="gap-3">
             <img src="images/logo.png" alt="">
             <h3 class="text-4xl lg:text-white font-bold">Fruit Burst</h3>
           </div>
-          <div class="hidden lg:block">
-            <button>
-              <input type="text" placeholder="Search here" class="input w-full rounded-full" />
-            </button>
-            <div class="btn btn-ghost btn-circle absolute -ml-14">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </div>
-          </div>
-        </div>
+
+      <div class=" pr-3   lg:w-[calc(30%-12px)]">  
+
+        <div class=" w-full  flex items-center"> 
+          <input type="text" placeholder="Search…" class="lg:text-gray-400 py-3 w-full pl-4 focus:outline-none hidden lg:block  rounded-l-full" />
+          <button class="lg:bg-white lg:py-3 lg:px-3 hidden lg:block rounded-r-full text-white lg:text-gray-400">   
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>               
+
+          <button class="lg:bg-white lg:py-3 lg:px-3 rounded-r-full  text-white block lg:hidden" onclick="my_modal_1.showModal()" >   
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>  
+
+          <div class="flex-none lg:hidden">
+        <label for="my-drawer-3" class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 text-white h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </label>
+      </div> 
+        </div>   
+      </div>
+    </div>
+  </div> 
+
+  <div class="drawer-side z-40">
+    <label for="my-drawer-3" class="drawer-overlay">
+    </label>  
+    <ul class=" p-4 w-80 h-full bg-base-200 bg-primareys text-white relative">
+      <label for="my-drawer-3" class="btn btn-square btn-ghost top-1 absolute right-1"> 
+        <i  class="inline-block w-6 h-6 stroke-current fa-solid fa-xmark text-xl bg-transparent z-12"></i>   
+      </label>
 
         <!-- Banner section-->
         <div class="carousel w-full">
@@ -256,25 +276,25 @@
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max flex-1 justify-center mx-3 md:mx-0 lg:mx-0 lg:justify-end">
               <div class="flex flex-col">
                 <span class="countdown font-lato text-5xl font-extrabold">
-                  <span style="--value:15;"></span>
+                  <span style="--value:29;"></span>
                 </span> days
               </div>
               <div class="font-lato text-4xl font-extrabold">:</div>
               <div class="flex flex-col">
                 <span class="countdown font-lato text-5xl font-extrabold">
-                  <span style="--value:10;"></span>
+                  <span style="--value:15;"></span>
                 </span> hours
               </div>
               <div class="font-lato text-4xl font-extrabold">:</div>
               <div class="flex flex-col">
                 <span class="countdown font-lato text-5xl font-extrabold">
-                  <span style="--value:24;"></span>
+                  <span style="--value:25;"></span>
                 </span> min
               </div>
               <div class="font-lato text-4xl font-extrabold">:</div>
               <div class="flex flex-col">
                 <span class="countdown font-lato text-5xl font-extrabold">
-                  <span style="--value:29;"></span>
+                  <span style="--value:08;"></span>
                 </span> sec
               </div>
             </div>
@@ -285,7 +305,7 @@
 
             <!-- Modal section start-->
 
-            <!-- Cart-1 -->
+            <!-- Card-1 -->
             <input type="checkbox" id="my_modal_6" class="modal-toggle" />
             <div class="modal font-lato">
               <div class="modal-box py-20">
@@ -320,7 +340,7 @@
               </div>
             </div>
 
-            <!-- cart-2 -->
+            <!-- card-2 -->
             <input type="checkbox" id="my_modal_7" class="modal-toggle" />
             <div class="modal font-lato">
               <div class="modal-box py-20">
@@ -355,7 +375,7 @@
               </div>
             </div>
 
-            <!-- cart-3 -->
+            <!-- card-3 -->
             <input type="checkbox" id="my_modal_8" class="modal-toggle" />
             <div class="modal font-lato">
               <div class="modal-box py-20">
@@ -390,7 +410,7 @@
               </div>
             </div>
 
-            <!-- cart-4 -->
+            <!-- card-4 -->
             <input type="checkbox" id="my_modal_9" class="modal-toggle" />
             <div class="modal font-lato">
               <div class="modal-box py-20">
@@ -427,7 +447,7 @@
 
             <!-- Modal section end -->
 
-            <!-- Cart 1 -->
+            <!-- Card 1 -->
             <div class="card border-2 pb-7 pt-16">
               <figure>
                 <img src="images/fruit6.png" alt="" />
@@ -458,7 +478,7 @@
               </div>
             </div>
 
-            <!-- Cart 2 -->
+            <!-- Card 2 -->
             <div class="card border-2 pb-7 pt-16">
               <figure>
                 <img src="images/fruit7.png" alt="" />
@@ -489,7 +509,7 @@
               </div>
             </div>
 
-            <!-- Cart 3 -->
+            <!-- Card 3 -->
             <div class="card border-2 pb-7 pt-16">
               <figure>
                 <img src="images/fruit8.png" alt="" />
@@ -521,7 +541,7 @@
               </div>
             </div>
 
-            <!-- Cart 4 -->
+            <!-- Card 4 -->
             <div class="card border-2 pb-7 pt-16">
               <figure>
                 <img src="images/fruit9.png" alt="" />
@@ -786,7 +806,7 @@
       </div>
       <div class="flex justify-center my-16 mx-10">
         <ul class="text-white flex flex-wrap justify-center gap-6 lg:gap-20">
-          <!-- Navbar menu content here -->
+
           <li><a href="">Home</a></li>
           <li><a href="">About Us</a></li>
           <li><a href="">Shop</a></li>
@@ -795,7 +815,7 @@
           <li><a href="">My Account</a></li>
         </ul>
       </div>
-      
+
       <div class="flex justify-center mt-14">
         <ul class="text-white flex flex-wrap gap-6 lg:gap-16 justify-center">
             <li><a href="https://www.google.com/"><i class="fa-brands fa-twitter text-4xl"></i></a></li>
